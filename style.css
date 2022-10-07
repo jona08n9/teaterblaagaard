@@ -4,6 +4,9 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
+
+  --regulardruk: "druk_text_wide_trialmedium";
+  --italicdruk: "druk_text_wide_trialHvIt";
 }
 
 body {
@@ -18,11 +21,29 @@ h2 {
 
 a {
   color: #fff;
+  font-family: var(--regulardruk);
 }
 
 a:hover {
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+.button {
+  background: none;
+  border: 1px solid white;
+  padding: 0.8rem 5rem 0.5rem;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  box-shadow: inset 0px 0px 1rem 0px #ffffff;
+  text-decoration: none;
 }
 
 /*** HEADER ***/
