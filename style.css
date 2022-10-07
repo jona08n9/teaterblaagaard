@@ -1,0 +1,158 @@
+/* ALL DOCU */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-size: 14px;
+  background-color: #000;
+}
+
+p,
+h2 {
+  color: #fff;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/*** HEADER ***/
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+#header__logo {
+  width: 100%;
+  max-width: 1800px;
+  height: auto;
+  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+#header__blaa {
+  width: 100%;
+  max-width: 1756px;
+  height: auto;
+  animation: neon 5s forwards;
+  animation-iteration-count: infinite;
+  filter: drop-shadow(0px 0px 5px rgb(85, 146, 231));
+}
+
+@keyframes neon {
+  0% {
+    opacity: 1;
+  }
+  8% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  11% {
+    opacity: 1;
+  }
+  16% {
+    opacity: 1;
+  }
+  17% {
+    opacity: 0.8;
+  }
+  18% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  31% {
+    opacity: 0.92;
+  }
+  33% {
+    opacity: 1;
+  }
+  41% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0.7;
+  }
+  44% {
+    opacity: 1;
+  }
+  71% {
+    opacity: 1;
+  }
+  72% {
+    opacity: 0.7;
+  }
+  73% {
+    opacity: 1;
+  }
+  89% {
+    opacity: 1;
+  }
+  91% {
+    opacity: 0.92;
+  }
+  92% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#header__teater--vertical {
+  width: 100%;
+  max-width: 90.92px;
+  height: auto;
+  display: none;
+}
+
+#header__teater--horizontal {
+  width: 20vw;
+  height: auto;
+  align-self: flex-end;
+}
+
+/*** MAIN ***/
+/*** FOOTER ***/
+
+.footer {
+  padding: 20px 30px;
+}
+
+/*** TABLET ***/
+@media screen and (min-width: 1756px) {
+}
+
+/*** DESKTOP ***/
+@media screen and (min-width: 1756px) {
+}
+
+/*** LARGE DESKTOP ***/
+@media screen and (min-width: 1709px) {
+  #header__teater--vertical {
+    display: inline-block;
+  }
+
+  #header__teater--horizontal {
+    display: none;
+  }
+
+  #header__logo {
+    display: flex;
+    flex-direction: row;
+  }
+}
