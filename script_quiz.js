@@ -60,7 +60,7 @@ function question1b() {
   quizAns1.removeEventListener("click", question1a);
   quizAns2.removeEventListener("click", question1b);
 
-  quizQuestion.textContent = "Kunne du finde på at foreslå, at tage i teateret og nyde den kolde øl der?";
+  quizQuestion.textContent = "Kunne du finde paa at foreslaa, at tage i teateret og nyde den kolde oel der?";
   quizAns1.textContent = "Ja!";
   quizAns2.textContent = "Nej...";
 
@@ -96,7 +96,7 @@ function svar3() {
   questionContainer.classList.toggle("hidden");
   resultsCont.classList.toggle("hidden");
 
-  resultTitle.textContent = "Fedt! Så skal du bare prøve det på Blaagaard!";
+  resultTitle.textContent = "Fedt! Saa skal du bare proeve det paa Blaagaard!";
   resultText2.textContent = "Tag vennerne under armen og vis dem hvad kultur også kan.";
   resultText1.textContent = "Vi har rammerne for en fed aften - både i sæderne og i baren!";
   resultText3.textContent = "#TeaterForAlle";

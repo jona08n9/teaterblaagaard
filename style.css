@@ -53,7 +53,6 @@ a:hover {
 
 .button {
   background: #000;
-  border: 1px solid none;
   padding: 0.8rem 5rem 0.5rem;
   font-size: 1.3rem;
   text-transform: uppercase;
@@ -182,19 +181,15 @@ header {
 
 /*** MAIN ***/
 main {
-  margin-top: 30px;
+  margin-top: 10px;
 }
-
-/* main > div {
-  background-image: url(images/test-front.png);
-  background-repeat: no-repeat;
-
-} */
 
 main > h2 {
-  padding-block: 10px 20px;
+  padding-block: 5px 20px;
   padding-inline: 10px;
 }
+
+/*** QUIZ STYLING ***/
 
 #quiz__container {
   background-image: url(images/test-front.png);
@@ -207,7 +202,7 @@ main > h2 {
 }
 
 #quiz__start-container {
-  margin-block: 100px;
+  margin-block-end: 250px;
 }
 
 #quiz__container h1,
@@ -215,6 +210,13 @@ main > h2 {
 #quiz__container h3,
 #quiz__container h4 {
   text-shadow: 3px 3px 6px #000;
+}
+
+#quiz__container p {
+  font-weight: 700;
+}
+#quiz__question-container {
+  margin-block-end: 100px;
 }
 
 #quiz__start-container .button {
@@ -242,18 +244,15 @@ main > h2 {
 
 #quiz__start-button {
   text-align: center;
-  margin: 50px;
-}
-#quiz__start-button div {
-  display: grid;
-  grid-template-columns: repeat (2, 1fr);
-  padding: 20px;
+  margin: 10px;
+  font-weight: 700;
 }
 
 .quiz__answer-box {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 700;
   padding: 20px 20px;
   margin: 20px 5px;
   font-size: 1.3rem;
@@ -281,7 +280,7 @@ main > h2 {
   font-family: var(--italicdruk);
 }
 
-#quiz__result-container div {
+#quiz__result-container > div {
   background: rgba(0, 0, 0, 0.6);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(1.5px);
@@ -308,6 +307,40 @@ main > h2 {
 }
 #quiz__result-text3 {
   margin-block: 25px 10px;
+}
+
+#registration p {
+  text-align: center;
+  padding-inline: 10px;
+  margin-block-end: 10px;
+}
+#registration-input {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+#registration-input input {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid rgb(7, 29, 170);
+  padding-block: 10px;
+  margin-inline: auto;
+}
+
+#registration-input input::placeholder {
+  color: #fff;
+  font-family: var(--regulardruk);
+  text-transform: uppercase;
+}
+
+.tilmeld {
+  text-align: center;
+  display: block;
+}
+
+.tilmeld:hover {
+  cursor: pointer;
 }
 
 /* #video-container {
