@@ -33,7 +33,7 @@ function showQuiz() {
   questionContainer.classList.toggle("hidden");
 
   quizQuestion.textContent = "Hvordan ser din ideelle fredag ud?";
-  quizAns1.textContent = "Chille på sofane med et glas vin og en netflix serie...";
+  quizAns1.textContent = "Chille på sofaen med et glas vin og en netflix serie...";
   quizAns2.textContent = "Mødes med vennerne over en kold øl.";
 
   quizAns1.addEventListener("click", question1a);
