@@ -11,7 +11,7 @@
 
 const quizContainer = document.querySelector("#quiz__container");
 const quizStart = document.querySelector("#quiz__start-container");
-const questionContainer = document.querySelector("#quiz_question-container");
+const questionContainer = document.querySelector("#quiz__question-container");
 const quizQuestion = document.querySelector("#quiz__question");
 const quizAns1 = document.querySelector("#quiz__answer-1");
 const quizAns2 = document.querySelector("#quiz__answer-2");
@@ -74,7 +74,7 @@ function svar1() {
   questionContainer.classList.toggle("hidden");
   resultsCont.classList.toggle("hidden");
 
-  resultTitle.textContent = "Så har du aldrig været på Blaagaard!";
+  resultTitle.textContent = "Saa har du aldrig vaeret paa Blaagaard!";
   resultText1.textContent = "Vi dømmer dig ikke... vi forstår dig godt...";
   resultText2.textContent = "Men på Blaagaard får du én på opleveren og måske åbner det dine øjne for noget nyt!?";
   resultText3.textContent = "#TeaterForAlle";
@@ -85,7 +85,7 @@ function svar2() {
   questionContainer.classList.toggle("hidden");
   resultsCont.classList.toggle("hidden");
 
-  resultTitle.textContent = "Så har du aldrig været på Blaagaard!";
+  resultTitle.textContent = "Saa har du aldrig vaeret paa Blaagaard!";
   resultText1.textContent = "I får én på opleveren og måske åbner det jeres øjne for noget nyt.";
   resultText2.textContent = "Bliv en del af fællesksabet - Oplev noget nyt!";
   resultText3.textContent = "#TeaterForAlle";
@@ -107,7 +107,7 @@ function svar4() {
   questionContainer.classList.toggle("hidden");
   resultsCont.classList.toggle("hidden");
 
-  resultTitle.textContent = "Så har du aldrig været på Blaagaard!";
+  resultTitle.textContent = "Saa har du aldrig vaeret paa Blaagaard!";
   resultText2.textContent = "Tag med dine venner her ned og lad os skabe rammerne for en fed aften - en af mange kommende!";
   resultText1.textContent = "";
   resultText3.textContent = "#TeaterForAlle";

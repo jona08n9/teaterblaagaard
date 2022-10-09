@@ -18,13 +18,44 @@
       </div>
     </header>
     <main>
-      <section id="video-container">
+      <h2>Tag testen:</h2>
+      <section id="quiz__container">
+        <article id="quiz__start-container">
+          <h1>Er teater noget for dig?</h1>
+          <h3>Tryk paa knappen for at tage testen!</h3>
+          <p id="quiz__start-button"><span class="button">Start testen</span></p>
+        </article>
+        <article id="quiz__question-container" class="hidden">
+          <h2 id="quiz__question"></h2>
+          <div>
+            <p><span id="quiz__answer-1" class="quiz__answer-box"></span></p>
+            <p><span id="quiz__answer-2" class="quiz__answer-box"></span></p>
+          </div>
+        </article>
+        <article id="quiz__result-container" class="hidden">
+          <h3><span id="quiz__result-title"></span></h3>
+          <div>
+            <p id="quiz__result-text1"></p>
+            <p id="quiz__result-text2"></p>
+            <p id="quiz__result-text3"></p>
+          </div>
+          <article id="registration">
+            <h3>Vind et årskort til Blaagaards Teater</h3>
+            <p>Skriv dig op til vores nyhedsbrev og vær med i lodtrækningen om et årskort til vores fantastiske teater.</p>
+            <input label="name" type="text" placeholder="Navn" />
+            <input label="email" type="email" placeholder="Email" />
+            <a class="button">Tilmeld</a>
+          </article>
+        </article>
+      </section>
+      <!-- <section id="video-container">
         <video id="video_video" src="" autoplay muted></video>
         <h1 id="video_title">Blaagaards Teater</h1>
         <a id="video_cta" class="button" href="#">Køb billet her</a>
-      </section>
+      </section> -->
     </main>
     <footer></footer>
+    <script src="script_quiz.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
