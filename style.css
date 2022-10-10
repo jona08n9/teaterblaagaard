@@ -379,11 +379,20 @@ main > h2 {
 }
 
 /*** TABLET ***/
-@media screen and (min-width: 1756px) {
+@media screen and (min-width: 756px) {
 }
 
 /*** DESKTOP ***/
-@media screen and (min-width: 1756px) {
+@media screen and (min-width: 1100px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main {
+    width: 1000px;
+    margin-inline: auto;
+  }
 }
 
 /*** LARGE DESKTOP ***/
@@ -399,5 +408,6 @@ main > h2 {
   #header__logo {
     display: flex;
     flex-direction: row;
+    max-height: 222.1px;
   }
 }
