@@ -449,7 +449,7 @@ main > h2 {
   padding-block: 0;
 }
 
-.om_blaagård h4 {
+.copy_grid_2 h4 {
   font-family: var(--italicdruk);
   text-transform: uppercase;
   font-weight: bold;
@@ -464,7 +464,7 @@ main > h2 {
   text-align: left;
 }
 
-h4 span {
+.copy_grid_2 h4 span {
   color: black;
   text-shadow: none;
 }
@@ -726,6 +726,15 @@ hr {
   .video-tablet {
     display: block;
   }
+
+  .copy_grid_2 h4 {
+    width: 560px;
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+  .copy_grid_2 p {
+    font-size: 1.3rem;
+  }
 }
 
 /*** DESKTOP ***/
@@ -749,6 +758,15 @@ hr {
 
   .img_hvad_er {
     margin-top: 40px;
+  }
+  .om_blaagaad h2, .om_blaagaad p {
+    margin-inline: 0;
+  }
+
+  .copy_grid_2 h4 {
+    width: 760px;
+    font-size: 1.7rem;
+    line-height: 2.5rem;
   }
 }
 
