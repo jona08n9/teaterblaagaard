@@ -8,6 +8,11 @@
 
   --regulardruk: "druk_text_wide_trialmedium";
   --italicdruk: "druk_text_wide_trialHvIt";
+  --neonyellow: #d5f945;
+  --pink: #ffc2fe;
+  --neonorange: #ff5d2d;
+  --blue: #0069f0;
+  --neongreen: #00d62b;
 }
 
 body {
