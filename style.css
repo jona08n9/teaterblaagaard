@@ -8,6 +8,11 @@
 
   --regulardruk: "druk_text_wide_trialmedium";
   --italicdruk: "druk_text_wide_trialHvIt";
+  --neonyellow: #d5f945;
+  --pink: #ffc2fe;
+  --neonorange: #ff5d2d;
+  --blue: #0069f0;
+  --neongreen: #00d62b;
 }
 
 body {
@@ -413,6 +418,103 @@ main > h2 {
 
 .cEGUfl {
   padding: 10px 10px 10px 25px;
+}
+
+/* copy styling */
+
+.om_blaagaad {
+  padding-block: 1rem;
+  display: grid;
+  /* text-align: center; */
+}
+.hvad_er h2 {
+  padding-bottom: 20px;
+  margin-inline: 20px;
+  font-size: 2.4rem;
+  margin-top: 20px;
+}
+.om_blaagaad p {
+  /* text-transform: uppercase; */
+  font-family: Helvetica, Arial, sans-serif;
+  padding-block: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  margin-inline: 20px;
+  margin-bottom: 10px;
+}
+
+.copy_grid_1 p,
+.hvad_er p {
+  text-transform: none;
+  padding-block: 0;
+}
+
+h4 {
+  font-family: var(--italicdruk);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9rem;
+  background-color: var(--pink);
+  color: black;
+  width: 350px;
+  padding: 20px;
+  line-height: 1.4rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px white;
+  text-align: left;
+}
+
+h4 span {
+  color: black;
+  text-shadow: none;
+}
+.hashtags {
+  margin-left: 20px;
+  padding-block: 30px;
+}
+.hashtags h3 {
+  font-size: 1.7rem;
+  text-align: center;
+  padding-block: 10px;
+}
+.h3_1 {
+  color: var(--blue);
+  padding-block: 5px;
+}
+.h3_2 {
+  color: var(--pink);
+  padding-block: 5px;
+}
+.h3_3 {
+  padding-block: 5px;
+  color: var(--neongreen);
+  margin-right: 10px;
+}
+.om_blaagaad img {
+  max-width: 100%;
+  z-index: 1;
+  padding-top: 10px;
+}
+.om_noerrebro h2 {
+  margin-inline: 20px;
+  margin-top: 20px;
+  text-align: right;
+  font-size: 1.7rem;
+}
+.img_hvad_er {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-bottom: 20px;
+}
+button {
+  font-family: var(--italicdruk);
+  padding: 20px;
+  padding-inline: 60px;
+  border-radius: 0;
+  border: solid white 2px;
+  background: none;
+  text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 /*** FOOTER ***/
