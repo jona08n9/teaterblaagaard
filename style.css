@@ -185,24 +185,26 @@ main {
 }
 
 main > h2 {
-  padding-block: 5px 20px;
-  padding-inline: 10px;
+  margin-block: 5px 20px;
+  margin-inline: 10px;
 }
 
 /*** QUIZ STYLING ***/
 
 #quiz__container {
-  background-image: url(images/test-front.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: transparent;
   min-height: 650px;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
 }
 
-#quiz__start-container {
-  margin-block-end: 250px;
+#quiz__start-container,
+#quiz__question-container,
+#quiz__result-container {
+  max-width: 700px;
 }
 
 #quiz__container h1,
@@ -210,6 +212,21 @@ main > h2 {
 #quiz__container h3,
 #quiz__container h4 {
   text-shadow: 3px 3px 6px #000;
+}
+
+#quiz__container #quiz__container-bg {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 700px;
+  object-fit: none;
+  object-position: 70% 10%;
+  z-index: -1;
+}
+
+#quiz__start-container {
+  margin-block-end: 250px;
 }
 
 #quiz__container p {
@@ -243,9 +260,11 @@ main > h2 {
 }
 
 #quiz__start-button {
+  box-sizing: border-box;
   text-align: center;
-  margin: 10px;
+  margin-inline: auto;
   font-weight: 700;
+  width: 350px;
 }
 
 .quiz__answer-box {
@@ -260,7 +279,6 @@ main > h2 {
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(1.5px);
   -webkit-backdrop-filter: blur(1.5px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -285,13 +303,13 @@ main > h2 {
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(1.5px);
   -webkit-backdrop-filter: blur(1.5px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
-  margin-block-end: 10px;
+  padding: 20px 5px;
+  margin: 20px 5px;
 }
 
 #quiz__result-text1,
@@ -309,6 +327,12 @@ main > h2 {
   margin-block: 25px 10px;
 }
 
+#registration {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 #registration p {
   text-align: center;
   padding-inline: 10px;
@@ -317,15 +341,19 @@ main > h2 {
 #registration-input {
   display: flex;
   flex-direction: row;
-  margin-bottom: 10px;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 auto 10px;
+  width: 320px;
 }
 
 #registration-input input {
   background-color: #000;
+  border: 1px solid rgb(35, 35, 35);
   color: #fff;
-  border: 1px solid rgb(7, 29, 170);
   padding-block: 10px;
-  margin-inline: auto;
+  text-align: center;
+  width: 170px;
 }
 
 #registration-input input::placeholder {
@@ -335,42 +363,16 @@ main > h2 {
 }
 
 .tilmeld {
+  box-sizing: border-box;
   text-align: center;
   display: block;
+  width: 350px;
+  margin-inline: auto;
 }
 
 .tilmeld:hover {
   cursor: pointer;
 }
-
-/* #video-container {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 9;
-  display: grid;
-  grid-template-columns: repeat(11, 1fr);
-  grid-template-rows: repeat(10, 1fr);
-  background-image: url(images/placeholder_u_logo.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-#video_video {
-  grid-area: 1 / 1 / 12 / 12;
-  z-index: 1;
-}
-
-#video_title {
-  grid-area: 6 / 4 / 7 / 9;
-  text-align: center;
-  z-index: 2;
-}
-
-#video_cta {
-  grid-area: 8 / 5 / 9 / 8;
-  font-size: 16px;
-  z-index: 2;
-} */
 
 /*** FOOTER ***/
 
@@ -378,8 +380,46 @@ main > h2 {
   padding: 20px 30px;
 }
 
+/* @media screen and (min-width: 430px) {
+  #quiz__container #quiz__container-bg {
+    left: -20%;
+  }
+} */
+
+/* ** MOBILE+ **
+@media screen and (min-width: 500px) {
+  #quiz__container #quiz__container-bg {
+    left: 0%;
+  }
+} */
+
 /*** TABLET ***/
 @media screen and (min-width: 756px) {
+  #quiz__container {
+    position: relative;
+  }
+
+  #registration-input {
+    gap: 100px;
+    width: 600px;
+  }
+
+  #registration-input input {
+    width: 200px;
+  }
+
+  .tilmeld {
+    width: 504px;
+  }
+
+  #quiz__container {
+    min-height: 700px;
+  }
+
+  #quiz__container-bg {
+    top: 0% !important;
+    object-fit: cover;
+  }
 }
 
 /*** DESKTOP ***/
@@ -390,7 +430,7 @@ main > h2 {
     justify-content: center;
   }
   main {
-    width: 1000px;
+    width: 1100px;
     margin-inline: auto;
   }
 }
