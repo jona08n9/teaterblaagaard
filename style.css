@@ -462,6 +462,8 @@ main > h2 {
   margin-bottom: 20px;
   text-shadow: 2px 2px white;
   text-align: left;
+  margin-top: -80px;
+  z-index: 2;
 }
 
 .copy_grid_2 h4 span {
@@ -758,8 +760,14 @@ hr {
   .img_hvad_er {
     margin-top: 40px;
   }
-  .om_blaagaad h2, .om_blaagaad p {
+  .om_blaagaad h2,
+  .om_blaagaad p {
     margin-inline: 0;
+  }
+
+  .copy_grid_1 p {
+    font-size: 1.4rem;
+    line-height: 2rem;
   }
 
   .copy_grid_2 h4 {
