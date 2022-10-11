@@ -639,7 +639,9 @@ hr {
 }
 
 #video__kampagne .video-mobile,
-#video__kampagne .video-tablet {
+#video__some .video-mobile,
+#video__kampagne .video-tablet,
+#video__some .video-tablet {
   margin-inline: auto;
 }
 #links h2,
