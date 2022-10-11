@@ -421,6 +421,52 @@ main > h2 {
   padding: 20px 30px;
 }
 
+/*** LANDING PAGE STYLES ***/
+
+#video,
+#foto {
+  margin: 20px 5px;
+}
+
+#video article,
+#foto article {
+  margin-block-end: 50px;
+}
+
+#video article h2,
+#foto article h2,
+#video article h4,
+#foto article h4 {
+  margin-block: 10px;
+}
+
+#video__kampagne .video-mobile,
+#video__kampagne .video-tablet {
+  margin-inline: auto;
+}
+#video h2,
+#foto h2 {
+  margin-block: 10px;
+  text-decoration: underline;
+}
+
+#video article h3,
+#foto article h3 {
+  font-family: var(--regulardruk);
+  font-size: 1rem;
+  margin-block-end: 10px;
+}
+
+.video-mobile {
+  display: block;
+}
+.video-tablet {
+  display: none;
+}
+.video-desktop {
+  display: none;
+}
+
 /*** TABLET ***/
 @media screen and (min-width: 756px) {
   #quiz__container {
@@ -446,6 +492,15 @@ main > h2 {
     object-fit: cover;
     height: 550px;
   }
+
+  /*** Landing Page ***/
+
+  .video-mobile {
+    display: none;
+  }
+  .video-tablet {
+    display: block;
+  }
 }
 
 /*** DESKTOP ***/
@@ -458,6 +513,13 @@ main > h2 {
   main {
     width: 1100px;
     margin-inline: auto;
+  }
+
+  .video-tablet {
+    display: none;
+  }
+  .video-desktop {
+    display: block;
   }
 }
 
