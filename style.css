@@ -449,7 +449,7 @@ main > h2 {
   padding-block: 0;
 }
 
-h4 {
+.om_blaagård h4 {
   font-family: var(--italicdruk);
   text-transform: uppercase;
   font-weight: bold;
@@ -527,18 +527,39 @@ h4 span {
 
 /*** LANDING PAGE STYLES ***/
 
-#video,
-#foto {
-  margin: 20px 5px;
+hr {
+  margin-block-end: 40px;
 }
 
+#indholdsfortegnelse li {
+  list-style-type: disc;
+  margin-inline: 50px;
+  font-size: 1.7rem;
+}
+#indholdsfortegnelse li:nth-child(1) {
+  margin-block-start: 20px;
+}
+
+#indholdsfortegnelse li:last-child {
+  margin-block-end: 20px;
+}
+#links,
+#video,
+#foto {
+  margin-inline: 5px;
+  padding-block: 20px;
+}
+
+#links article,
 #video article,
 #foto article {
   margin-block-end: 50px;
 }
 
+#links article h2,
 #video article h2,
 #foto article h2,
+#links article h4,
 #video article h4,
 #foto article h4 {
   margin-block: 10px;
@@ -554,11 +575,15 @@ h4 span {
   text-decoration: underline;
 }
 
-#video article h3,
-#foto article h3 {
+#video article h4,
+#foto article h4 {
   font-family: var(--regulardruk);
   font-size: 1rem;
   margin-block-end: 10px;
+}
+
+#links h4 {
+  margin-block: 10px;
 }
 
 .video-mobile {
@@ -569,6 +594,13 @@ h4 span {
 }
 .video-desktop {
   display: none;
+}
+
+#foto img {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  border: 1px solid #fff;
 }
 
 /*** TABLET ***/
