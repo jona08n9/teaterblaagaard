@@ -449,7 +449,7 @@ main > h2 {
   padding-block: 0;
 }
 
-.om_blaagård h4 {
+.copy_grid_2 h4 {
   font-family: var(--italicdruk);
   text-transform: uppercase;
   font-weight: bold;
@@ -464,7 +464,7 @@ main > h2 {
   text-align: left;
 }
 
-h4 span {
+.copy_grid_2 h4 span {
   color: black;
   text-shadow: none;
 }
