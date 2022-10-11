@@ -63,6 +63,7 @@ a:hover {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
+  border: 1px solid #fff;
 }
 
 .button:hover {
@@ -257,6 +258,10 @@ main > h2 {
 
 #quiz__question-container h2 {
   margin-block-end: 70px;
+}
+
+#quiz__start-container h3 {
+  padding-block-end: 40px;
 }
 
 #quiz__start-button {
