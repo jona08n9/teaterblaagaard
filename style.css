@@ -525,6 +525,52 @@ h4 span {
   padding: 20px 30px;
 }
 
+/*** LANDING PAGE STYLES ***/
+
+#video,
+#foto {
+  margin: 20px 5px;
+}
+
+#video article,
+#foto article {
+  margin-block-end: 50px;
+}
+
+#video article h2,
+#foto article h2,
+#video article h4,
+#foto article h4 {
+  margin-block: 10px;
+}
+
+#video__kampagne .video-mobile,
+#video__kampagne .video-tablet {
+  margin-inline: auto;
+}
+#video h2,
+#foto h2 {
+  margin-block: 10px;
+  text-decoration: underline;
+}
+
+#video article h3,
+#foto article h3 {
+  font-family: var(--regulardruk);
+  font-size: 1rem;
+  margin-block-end: 10px;
+}
+
+.video-mobile {
+  display: block;
+}
+.video-tablet {
+  display: none;
+}
+.video-desktop {
+  display: none;
+}
+
 /*** TABLET ***/
 @media screen and (min-width: 756px) {
   #quiz__container {
@@ -550,17 +596,14 @@ h4 span {
     object-fit: cover;
     height: 550px;
   }
-  /* copy styling */
-  .om_blaagaad p {
-    font-size: 1.1rem;
+
+  /*** Landing Page ***/
+
+  .video-mobile {
+    display: none;
   }
-  .hashtags h3 {
-    font-size: 2rem;
-  }
-  h4 {
-    width: 650px;
-    font-size: 1.3rem;
-    line-height: 2rem;
+  .video-tablet {
+    display: block;
   }
 }
 
@@ -575,27 +618,12 @@ h4 span {
     width: 1100px;
     margin-inline: auto;
   }
-  /* copy styling */
-  .om_blaagaad p,
-  .hashtags {
-    font-size: 1.3rem;
-    margin-inline: 0;
-    line-height: 2rem;
-  }
-  .hashtags h3 {
-    font-size: 3rem;
 
-    padding-block: 30px;
+  .video-tablet {
+    display: none;
   }
-  .hvad_er h2 {
-    margin-inline: 0;
-    font-size: 3.7rem;
-  }
-
-  h4 {
-    width: 800px;
-    font-size: 1.3rem;
-    line-height: 2rem;
+  .video-desktop {
+    display: block;
   }
 
   .img_hvad_er {
