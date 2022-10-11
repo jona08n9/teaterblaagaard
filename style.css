@@ -725,6 +725,12 @@ hr {
   .video-tablet {
     display: block;
   }
+
+  .copy_grid_2 h4 {
+    width: 560px;
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
 }
 
 /*** DESKTOP ***/
