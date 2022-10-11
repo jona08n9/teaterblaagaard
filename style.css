@@ -335,9 +335,20 @@ main > h2 {
 
 #registration p {
   text-align: center;
+  line-height: 1.5rem;
+  max-width: 65ch;
   padding-inline: 10px;
   margin-block-end: 10px;
+  text-shadow: 2px 2px 6px #000;
+  margin-inline: auto;
 }
+
+#registration p span {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-weight: 700;
+}
+
 #registration-input {
   display: flex;
   flex-direction: row;
@@ -374,29 +385,42 @@ main > h2 {
   cursor: pointer;
 }
 
+/*** GOOGLE REVIEW ***/
+
+.elfsight-app-030bb501-2a97-4cf0-ba2b-73dcf7c982b1 {
+  margin: 30px 10px;
+  padding: 10px;
+}
+
+.Main__Container-sc-1n4ud0o-0.dFwLrb > a {
+  display: none;
+}
+
+.kXaVQX {
+  margin-bottom: 0;
+  font-family: var(--italicdruk);
+  text-transform: uppercase;
+}
+
+.fRpinn:not(:first-child) {
+  margin-top: 20px;
+}
+
+.cEGUfl {
+  padding: 10px 10px 10px 25px;
+}
+
 /*** FOOTER ***/
 
 .footer {
   padding: 20px 30px;
 }
 
-/* @media screen and (min-width: 430px) {
-  #quiz__container #quiz__container-bg {
-    left: -20%;
-  }
-} */
-
-/* ** MOBILE+ **
-@media screen and (min-width: 500px) {
-  #quiz__container #quiz__container-bg {
-    left: 0%;
-  }
-} */
-
 /*** TABLET ***/
 @media screen and (min-width: 756px) {
   #quiz__container {
     position: relative;
+    min-height: 550px;
   }
 
   #registration-input {
@@ -412,13 +436,10 @@ main > h2 {
     width: 504px;
   }
 
-  #quiz__container {
-    min-height: 700px;
-  }
-
   #quiz__container-bg {
     top: 0% !important;
     object-fit: cover;
+    height: 550px;
   }
 }
 
