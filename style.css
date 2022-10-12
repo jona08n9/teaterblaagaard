@@ -5,6 +5,7 @@
   list-style: none;
   text-decoration: none;
   color: #fff;
+  scroll-behavior: smooth;
 
   --regulardruk: "druk_text_wide_trialmedium";
   --italicdruk: "druk_text_wide_trialHvIt";
@@ -125,6 +126,7 @@ header {
 /*** MAIN ***/
 main {
   margin-top: 10px;
+  margin: 10px 10px 0;
 }
 
 main > h2 {
@@ -678,6 +680,27 @@ hr {
   padding: 5px;
   border: 1px solid #fff;
 }
+.infotekst {
+  text-transform: none;
+  max-width: 65ch;
+  margin: 15px 0;
+  line-height: 1.5;
+}
+
+.vid_text_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(545px, 1fr));
+}
+
+.foto_text_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.foto_gal_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
 
 /*** ANIMATIONS ***/
 
@@ -894,6 +917,13 @@ hr {
     object-fit: cover;
     height: 550px;
   }
+  #foto img {
+    border: none;
+  }
+
+  #some_foto {
+    border: 1px solid #fff !important;
+  }
 
   /*** COPY ***/
   .copy_grid_2 {
@@ -953,6 +983,16 @@ hr {
     .copy_grid_1 p {
       font-size: 1.4rem;
       line-height: 2rem;
+    }
+    .infotekst {
+      display: flex;
+      justify-content: center;
+      order: 1;
+      margin: 26px 10px;
+    }
+    .foto_text_grid p {
+      order: 0;
+      margin: 0;
     }
   }
 
