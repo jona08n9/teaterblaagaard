@@ -7,10 +7,10 @@ function changeQuizImgBG() {
 
   if (window.matchMedia("(min-width:756px)").matches) {
     console.log("Vinduet er >756px");
-    bgImage.srcset = "images/ved-front1.jpg";
+    bgImage.srcset = "images/ved-front1.webp";
   } else {
     console.log("Vinduet er <756px");
-    bgImage.srcset = "images/test-front.png";
+    bgImage.srcset = "images/test-front.webp";
   }
 }
 
